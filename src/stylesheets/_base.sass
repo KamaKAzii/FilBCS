@@ -11,3 +11,26 @@ body
   background: $body-bg url('/images/bg_content.jpg') no-repeat left top
   width: 758px
   height: 358px + 86px
+
+
+$article-width: 715px
+$article-height: 320px
+$article-right-margin: 20px
+$number-of-articles: 2
+
+.section-wrapper
+  position: absolute
+  top: 20px
+  left: 20px
+section
+  position: absolute
+  top: 0
+  left: 0
+  height: $article-height
+  width: $number-of-articles * ($article-width + $article-right-margin)
+  article
+    +float(left)
+    background: blue
+    width: $article-width
+    height: $article-height
+    margin-right: $article-right-margin
