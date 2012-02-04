@@ -3,4 +3,11 @@
 @import compass/layout
 
 body
-  background: red url('/images/bg_main.jpg') repeat left top
+  background: $body-bg url('/images/bg_main.jpg') repeat left top
+
+.main
+  position: relative
+  border: 4px solid $border-light
+  background: $body-bg url('/images/bg_content.jpg') no-repeat left top
+  width: 758px
+  height: 358px + 86px
