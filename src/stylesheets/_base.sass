@@ -5,35 +5,47 @@
 body
   background: $body-bg url('/images/bg_main.jpg') repeat left top
 
+.ornament
+  background: transparent url('/images/bg_ornament.png') no-repeat left top
+  width: 908px
+  height: 375px
+  margin-left: -454px
+  position: absolute
+  left: 50%
+  top: 280px
+
 .main
   position: relative
+  margin-left: -379px
+  left: 50%
+  top: 40px
   border: 4px solid $border-light
   background: $body-bg url('/images/bg_content.jpg') no-repeat left top
   width: 758px
   height: 358px + 86px
 
-
-$article-width: 715px
-$article-height: 320px
-$article-right-margin: 20px
-$number-of-articles: 2
+$article-width: 730px
+$article-height: 327px
+$article-left-margin: 15px
+$number-of-articles: 6
 
 .section-wrapper
   position: absolute
   top: 0
   left: 0
-  width: 300px
-  height: 300px
-  margin: 10px 0 0 10px
+  width: 758px
+  height: $article-height
+  margin-top: 15px
+  overflow: hidden
 section
   position: absolute
   top: 0
-  left: 0
+  left: $article-left-margin
   height: $article-height
-  width: $number-of-articles * ($article-width + $article-right-margin)
+  width: $number-of-articles * ($article-width + $article-left-margin)
   article
     +float(left)
-    background: blue
+    background: rgba(0, 0, 0, 0.5)
     width: $article-width
     height: $article-height
-    margin-right: $article-right-margin
+    margin-right: $article-left-margin

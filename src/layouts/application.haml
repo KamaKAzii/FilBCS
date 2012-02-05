@@ -5,9 +5,10 @@
     - if @page_description
       %meta{:name => "description", :content => @page_description}
     = stylesheets :screen
-    = javascripts('https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
-    = javascripts('http://ajax.cdnjs.com/ajax/libs/modernizr/1.7/modernizr-1.7.min.js')
+    = javascripts('jquery-1.6.1.min')
+    = javascripts('modernizr-1.7.min')
   %body{:id => body_id, :class => body_class}
     = yield
 
     = javascripts('application')
+    = javascripts('carousel')
