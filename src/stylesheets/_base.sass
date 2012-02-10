@@ -18,16 +18,20 @@ body
   position: relative
   margin-left: -379px
   left: 50%
-  top: 40px
+  top: 90px
   border: 4px solid $border-light
   background: $body-bg url('/images/bg_content.jpg') no-repeat left top
   width: 758px
   height: 358px + 86px
 
+
 $article-width: 730px
 $article-height: 327px
 $article-left-margin: 15px
 $number-of-articles: 6
+$gutter: 16px
+$padding: 16px
+$trailer: 8px
 
 .section-wrapper
   position: absolute
@@ -45,7 +49,16 @@ section
   width: $number-of-articles * ($article-width + $article-left-margin)
   article
     +float(left)
-    background: rgba(0, 0, 0, 0.5)
     width: $article-width
-    height: $article-height
+    min-height: $article-height
     margin-right: $article-left-margin
+    .panel
+      padding: $padding
+      background: rgba(0, 0, 0, 0.5)
+      width: $article-width - ($padding * 2)
+      min-height: $article-height
+      &.double
+        +float(left)
+        width: ($article-width / 2) - ($gutter / 2) - ($padding * 2)
+        &:first-of-type
+          margin-right: $gutter

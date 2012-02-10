@@ -3,25 +3,27 @@
 - @body_class = "homepage"
 - @page_description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do."
 
+
 .ornament
 .container
   .main
+    %h1 FilBCS <span>Filipino Badmington Club of Sydney</span>
     .section-wrapper
       %section
         %article.one
-          Article one
+          = partial("home")
         %article.two
-          Article two
+          = partial("games")
         %article.three
-          Article three
+          = partial("events")
         %article.four
-          Article four
+          = partial("members")
         %article.five
-          Article five
+          = partial("gallery")
         %article.six
-          Article six
+          = partial("contacts")
     %nav
-      %h1.logo FilBCS
+      %h2.logo FilBCS
       %ul
         %li
           .home
