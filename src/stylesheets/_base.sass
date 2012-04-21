@@ -56,7 +56,14 @@ section
       padding: $padding
       background: rgba(0, 0, 0, 0.5)
       width: $article-width - ($padding * 2)
-      min-height: $article-height
+      height: $article-height
+      overflow: scroll
+      .part
+        +pie-clearfix
+        clear: both
+        margin-bottom: $trailer
+      &.no-scroll
+        overflow: auto
       &.double
         +float(left)
         width: ($article-width / 2) - ($gutter / 2) - ($padding * 2)
