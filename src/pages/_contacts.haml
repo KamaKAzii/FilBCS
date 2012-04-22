@@ -1,21 +1,25 @@
 .panel.double
-  %h3 Home <span>Bloop</span>
-  %header
-    For the benefit of all club members, the club organises club events throughout the calendar year.
-  %h4 Tournaments
+  %h3 Contact <span>information</span>
+  %img{:src => "images/contacts01.jpg"}
+  %p.intro
+    <span>FilBCS-Filipino Badminton Club of Sydney<br />Sydney, Australia<br />Email: <a href="mailto:secretariat@filbcs.org.au" target="_blank">secretariat@filbcs.org.au</a><br /> Yahoo Group: Pinoy_Badminton_Oz
   %p
-    FilBCS generally holds 4 tournaments per year. Three tournaments are allocated for internal club tournaments. Once a year we hold an interstate competition against our <a href="melboourneCounterparts#">Melbourne counterparts</a>. Tournaments are arranged by the programs committee and a variety of formats are utilised.
-  %h4 Family Day
-  %p
-    We are first and foremost a family friendly club. In this regard, the club organises at least one family day per year. Typically a scenic outdoors venue is selected for a whole day of organised games, eating, drinking, and general merry making.
+    <span>Club Contacts</span><br />
+    President: <a href="mailto:president@filbcs.org.au" target="_blank">president@filbcs.org.au</a><br />
+    Secretariat: <a href="mailto:secretariat@filbcs.org.au" target="_blank">secretariat@filbcs.org.au</a><br />
+
 
 .panel.double
-  %h3 Home <span>Bloop</span>
-  %header
-    For the benefit of all club members, the club organises club events throughout the calendar year.
-  %h4 Tournaments
+  %h3 Contact <span>form</span>
   %p
-    FilBCS generally holds 4 tournaments per year. Three tournaments are allocated for internal club tournaments. Once a year we hold an interstate competition against our <a href="melboourneCounterparts#">Melbourne counterparts</a>. Tournaments are arranged by the programs committee and a variety of formats are utilised.
-  %h4 Family Day
-  %p
-    We are first and foremost a family friendly club. In this regard, the club organises at least one family day per year. Typically a scenic outdoors venue is selected for a whole day of organised games, eating, drinking, and general merry making.
+    <span>Interested in our club?</span><br /> Fill in the contact form below and the club secretary will endevour to get back to you shortly.
+  .contact-form
+    %form
+      %input.full-name{:type => "text", :placeholder => "Your full name:"}
+      %input.tel{:type => "text", :placeholder => "Your telephone:"}
+      %input.email{:type => "text", :placeholder => "E-mail address:"}
+
+      %textarea.message
+      %input.send{:type => "submit", :value => "send"}
+      %input.clear{:type => "submit", :value => "clear"}
+
