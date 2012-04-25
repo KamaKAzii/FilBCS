@@ -1,0 +1,36 @@
+// Contacts
+
+.six
+  img
+    +pie-clearfix
+    +float(left)
+  .intro
+    +float(right)
+    width: 173px
+  .contacts
+    clear: both
+  .full-name, .tel, .email, .message, .send, .clear
+    +float(left)
+    width: 130px
+  .full-name
+    margin-bottom: $trailer
+  .tel
+    clear: left
+  .email
+    margin-left: $trailer
+  .send
+    clear: left
+  .message
+    margin-top: $trailer
+    margin-bottom: $trailer
+    height: 100px
+    width: 268px
+  .send, .clear
+    background: none
+    color: $theme-color
+    border: none
+    outline: none
+    width: auto
+    &:hover
+      text-decoration: underline
+      cursor: pointer

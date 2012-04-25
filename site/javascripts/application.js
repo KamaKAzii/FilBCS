@@ -8,7 +8,6 @@ $(document).ready(function() {
 		.not("a[href*='" + hostname + "']")
 		.addClass('link external')
 		.attr('target', '_blank');
-
 });
 
 // Start of my stuff
@@ -27,9 +26,6 @@ $("nav div").hover(
 // Carousel
 
 var carousel = {
-  utils: function() {
-    alert("hello");
-  },
   articleWidth: 730,
   articleLeftMargin: 15
 };
@@ -55,3 +51,23 @@ $("nav ul li").click(function() {
     }
   );
 });
+
+// Clear form on cilck of "clear" button
+$(".clear").click(function(e) {
+  $(".contact-form form input[type='text'], .contact-form form textarea").val("");
+  e.preventDefault();
+});
+
+// Send form? Dunno how you want this to work
+$(".send").click(function() {
+  // Do some stuff?
+});
+
+
+// Carousel Init
+$("#carouselMe").carousel(
+  {
+    panelWidth: 681,
+    animationDuration: 1300
+  }
+);

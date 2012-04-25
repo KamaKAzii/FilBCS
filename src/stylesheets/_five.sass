@@ -1,0 +1,55 @@
+// Gallery
+
+.five
+  .panel
+    position: relative
+  .gallery-left
+    position: absolute
+    bottom: 30px
+    left: 0
+  .gallery-right
+    position: absolute
+    bottom: 30px
+    right: 0
+
+  .hideMe
+    display: none
+  .carousel-wrapper 
+    width: 681px
+    overflow: hidden
+    position: relative
+    left: 9px
+  #carouselMe 
+    list-style-type: none
+    padding-left: 0
+    margin: 0
+    display: block
+    width: 6129px
+    height: 224px
+    overflow: hidden
+    position: relative
+    top: 0
+    left: 0
+  #carouselMe li 
+    float: left
+    width: 681px
+    height: 224px
+  #carouselMe li img 
+    width: 681px
+    height: 224px
+  .carouselNav 
+    position: relative
+    background: red
+  .carouselDot
+    display: none
+  .carouselNext, .carouselPrev
+    position: absolute
+    bottom: -36px
+    &:hover
+      cursor: pointer
+      color: $theme-color
+      text-decoration: underline
+  .carouselPrev
+    left: 0
+  .carouselNext
+    right: 0

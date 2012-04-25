@@ -1,0 +1,469 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background: black url("/images/bg_main.jpg") repeat left top;
+}
+
+.ornament {
+  background: transparent url("/images/bg_ornament.png") no-repeat left top;
+  width: 908px;
+  height: 375px;
+  margin-left: -454px;
+  position: absolute;
+  left: 50%;
+  top: 280px;
+}
+
+.main {
+  position: relative;
+  margin-left: -379px;
+  left: 50%;
+  top: 90px;
+  border: 4px solid #b8b8b8;
+  background: black url("/images/bg_content.jpg") no-repeat left top;
+  width: 758px;
+  height: 444px;
+}
+
+.section-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 758px;
+  height: 327px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  height: 327px;
+  width: 4470px;
+}
+section article {
+  display: inline;
+  float: left;
+  width: 730px;
+  min-height: 327px;
+  margin-right: 15px;
+}
+section article .panel {
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 698px;
+  height: 327px;
+  overflow: scroll;
+}
+section article .panel .part {
+  *zoom: 1;
+  clear: both;
+  margin-bottom: 8px;
+}
+section article .panel .part:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section article .panel.no-scroll {
+  overflow: auto;
+}
+section article .panel.double {
+  display: inline;
+  float: left;
+  width: 325px;
+}
+section article .panel.double:first-of-type {
+  margin-right: 16px;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+}
+
+a {
+  color: #f3db07;
+}
+a:hover {
+  color: #fcf297;
+}
+
+p, header {
+  margin-bottom: 8px;
+}
+
+p {
+  line-height: 16px;
+}
+
+p span {
+  font-weight: bold;
+}
+
+h1 {
+  position: absolute;
+  top: -50px;
+  left: -5px;
+  color: #f3db07;
+  font-size: 48px;
+  font-weight: 100;
+}
+h1 span {
+  color: white;
+  font-size: 13px;
+}
+
+h3 {
+  color: #f3db07;
+  font-size: 32px;
+  font-weight: 100;
+  padding-bottom: 8px;
+  border-bottom: 1px solid white;
+  margin-bottom: 8px;
+}
+h3 span {
+  font-size: 13px;
+  color: white;
+  font-weight: normal;
+}
+
+header, h4 {
+  font-weight: bold;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #303030;
+  width: 100%;
+  height: 86px;
+}
+nav .logo {
+  position: absolute;
+  left: 300px;
+  top: 6px;
+  background: transparent url("/images/logo.png") no-repeat left top;
+  width: 150px;
+  height: 226px;
+  text-indent: -999em;
+}
+nav ul {
+  margin: 17px 0 0 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  color: white;
+}
+nav ul li {
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 3px 1px, #50504f 0 0 0px 1px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 3px 1px, #50504f 0 0 0px 1px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 3px 1px, #50504f 0 0 0px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 3px 1px, #50504f 0 0 0px 1px inset;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #404040), color-stop(100%, #50504f));
+  background-image: -webkit-linear-gradient(#404040, #50504f);
+  background-image: -moz-linear-gradient(#404040, #50504f);
+  background-image: -o-linear-gradient(#404040, #50504f);
+  background-image: -ms-linear-gradient(#404040, #50504f);
+  background-image: linear-gradient(#404040, #50504f);
+  display: inline;
+  float: left;
+  position: relative;
+  width: 94px;
+  height: 51px;
+  margin-right: 5px;
+  overflow: hidden;
+}
+nav ul li.logo-space {
+  margin-right: 142px;
+}
+nav ul li div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 94px;
+  height: 102px;
+}
+nav ul li .home {
+  background: transparent url("/images/menu_home.png") no-repeat left top;
+}
+nav ul li .games {
+  background: transparent url("/images/menu_games.png") no-repeat left top;
+}
+nav ul li .events {
+  background: transparent url("/images/menu_events.png") no-repeat left top;
+}
+nav ul li .members {
+  background: transparent url("/images/menu_members.png") no-repeat left top;
+}
+nav ul li .gallery {
+  background: transparent url("/images/menu_gallery.png") no-repeat left top;
+}
+nav ul li .contacts {
+  background: transparent url("/images/menu_contacts.png") no-repeat left top;
+}
+
+article {
+  font-weight: 100;
+  line-height: 20px;
+  color: white;
+}
+article header {
+  font-weight: bold;
+}
+
+.one img.title {
+  display: inline;
+  float: left;
+}
+.one div.title {
+  display: inline;
+  float: right;
+  width: 175px;
+}
+.one .photo-thumb {
+  display: inline-block;
+  margin-right: 10px;
+}
+.one .photo-thumb:last-child {
+  margin-right: 0;
+}
+.one .news-feed {
+  overflow: auto;
+  height: 120px;
+}
+.one .date {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.one .column {
+  display: inline;
+  float: left;
+  width: 155px;
+}
+.one .column:last-child {
+  display: inline;
+  float: right;
+}
+
+.two li {
+  display: inline;
+  float: left;
+  width: 160px;
+}
+.two dl {
+  margin-bottom: 8px;
+}
+.two dd, .two dt {
+  margin-bottom: 0;
+}
+.two dt {
+  text-decoration: underline;
+}
+
+.three dt {
+  text-decoration: underline;
+}
+.three dd {
+  margin-bottom: 8px;
+}
+.three img {
+  display: inline;
+  float: left;
+  display: block;
+}
+.three .intro {
+  display: inline;
+  float: right;
+  width: 175px;
+}
+
+.four img {
+  display: inline;
+  float: left;
+}
+.four .intro {
+  display: inline;
+  float: right;
+  width: 175px;
+}
+
+.five .panel {
+  position: relative;
+}
+.five .gallery-left {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+.five .gallery-right {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+.five .hideMe {
+  display: none;
+}
+.five .carousel-wrapper {
+  width: 681px;
+  overflow: hidden;
+  position: relative;
+  left: 9px;
+}
+.five #carouselMe {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: block;
+  width: 6129px;
+  height: 224px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.five #carouselMe li {
+  float: left;
+  width: 681px;
+  height: 224px;
+}
+.five #carouselMe li img {
+  width: 681px;
+  height: 224px;
+}
+.five .carouselNav {
+  position: relative;
+  background: red;
+}
+.five .carouselDot {
+  display: none;
+}
+.five .carouselNext, .five .carouselPrev {
+  position: absolute;
+  bottom: -36px;
+}
+.five .carouselNext:hover, .five .carouselPrev:hover {
+  cursor: pointer;
+  color: #f3db07;
+  text-decoration: underline;
+}
+.five .carouselPrev {
+  left: 0;
+}
+.five .carouselNext {
+  right: 0;
+}
+
+.six img {
+  *zoom: 1;
+  display: inline;
+  float: left;
+}
+.six img:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.six .intro {
+  display: inline;
+  float: right;
+  width: 173px;
+}
+.six .contacts {
+  clear: both;
+}
+.six .full-name, .six .tel, .six .email, .six .message, .six .send, .six .clear {
+  display: inline;
+  float: left;
+  width: 130px;
+}
+.six .full-name {
+  margin-bottom: 8px;
+}
+.six .tel {
+  clear: left;
+}
+.six .email {
+  margin-left: 8px;
+}
+.six .send {
+  clear: left;
+}
+.six .message {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  height: 100px;
+  width: 268px;
+}
+.six .send, .six .clear {
+  background: none;
+  color: #f3db07;
+  border: none;
+  outline: none;
+  width: auto;
+}
+.six .send:hover, .six .clear:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
