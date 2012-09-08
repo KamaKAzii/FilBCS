@@ -23,6 +23,21 @@ $("nav div").hover(
   }
 );
 
+// Modals
+//
+var $modalTriggers = $(".modal-trigger");
+var modalNames = [];
+
+$modalTriggers.on("click", function() {
+  var target = $.trim($(this).attr("class").replace("modal-trigger", ""));
+  $target = $("#" + target);
+  $target.css("display", "block");
+  $target.find(".close a").on("click", function(e) {
+    $(this).parents(".modal").css("display", "none");
+    e.preventDefault();
+  });
+});
+
 // Carousel
 
 var carousel = {

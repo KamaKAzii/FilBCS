@@ -22,4 +22,4 @@ output_style          = :expanded
 
 # Determine whether Compass asset helper functions generate relative
 # or absolute paths
-relative_assets       = true
+relative_assets       = false

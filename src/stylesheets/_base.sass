@@ -5,6 +5,39 @@
 body
   background: $body-bg url('/images/bg_main.jpg') repeat left top
 
+.modal
+  // Display none by default
+  display: none
+
+  z-index: 100
+  position: absolute
+  left: 5%
+  top: 5%
+  width: 90%
+  height: 90%
+  background: rgba(0, 0, 0, 0.8)
+  border: 3px solid #ccc
+  $taskbar-height: 30px
+  .taskbar
+    height: $taskbar-height
+    background: rgba(0, 0, 0, 0.6)
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    .close
+      display: block
+      float: right
+      padding-right: 10px
+      height: $taskbar-height
+      font-size: 18px
+      line-height: 30px
+      a
+        color: white
+        text-decoration: none
+        &:hover
+          color: $theme-color
+  .content
+    color: white
+    padding: 20px
+
 .ornament
   background: transparent url('/images/bg_ornament.png') no-repeat left top
   width: 908px
