@@ -3,7 +3,7 @@
   <head>
     <title>hello</title>
     <meta content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do." name="description">
-    <link href="/stylesheets/screen.css" media="all" rel="stylesheet" type="text/css">
+    <link href="stylesheets/screen.css" media="all" rel="stylesheet" type="text/css">
     <script language="javascript" src="javascripts/jquery-1.7.2.min.js" type="text/javascript"></script>
     <script language="javascript" src="javascripts/carousel.jquery.js" type="text/javascript"></script>
   </head>
@@ -11,6 +11,23 @@
     <div class="ornament"></div>
 <div class="container">
   <div class="main">
+    <div class="modal" id="extra-info-on-home">
+      <div class="taskbar">
+        <div class="close">
+          <a href="#">
+            x
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <p>
+          This is the content for the extra info on home modal popup... This is just an example
+        </p>
+        <p>
+          To use a modal liek this, create another modal with a new ID value, and give the anchor tag which activates that modal a class "modal-trigger &lt;value&gt;"
+        </p>
+      </div>
+    </div>
     <h1>FilBCS <span>Filipino Badmington Club of Sydney</span></h1>
     <div class="section-wrapper">
       <section>
@@ -21,7 +38,10 @@
     <img class="title" src="images/home01.jpg">
     <div class="title">
       <p>
-        The Filipino Badminton Club of Sydney (FilBCS) is an association of Filipino badminton enthusiasts who share the same passion of playing badminton with <span>friends and families</span>
+        The Filipino Badminton Club of Sydney (FilBCS) is an association of Filipino badminton enthusiasts who share the same passion of playing badminton with <span>friends and families</span>.
+        <a class="modal-trigger extra-info-on-home" href="#">
+          More info
+        </a>
       </p>
     </div>
   </div>

@@ -55,11 +55,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  background: black url("/images/bg_main.jpg") repeat left top;
+  background: black url("../images/bg_main.jpg") repeat left top;
+}
+
+.modal {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid #cccccc;
+}
+.modal .taskbar {
+  height: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.modal .taskbar .close {
+  display: block;
+  float: right;
+  padding-right: 10px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.modal .taskbar .close a {
+  color: white;
+  text-decoration: none;
+}
+.modal .taskbar .close a:hover {
+  color: #f3db07;
+}
+.modal .content {
+  color: white;
+  padding: 20px;
 }
 
 .ornament {
-  background: transparent url("/images/bg_ornament.png") no-repeat left top;
+  background: transparent url("../images/bg_ornament.png") no-repeat left top;
   width: 908px;
   height: 375px;
   margin-left: -454px;
@@ -74,7 +110,7 @@ body {
   left: 50%;
   top: 90px;
   border: 4px solid #b8b8b8;
-  background: black url("/images/bg_content.jpg") no-repeat left top;
+  background: black url("../images/bg_content.jpg") no-repeat left top;
   width: 758px;
   height: 444px;
 }
@@ -199,7 +235,7 @@ nav .logo {
   position: absolute;
   left: 300px;
   top: 6px;
-  background: transparent url("/images/logo.png") no-repeat left top;
+  background: transparent url("../images/logo.png") no-repeat left top;
   width: 150px;
   height: 226px;
   text-indent: -999em;
@@ -246,22 +282,22 @@ nav ul li div {
   height: 102px;
 }
 nav ul li .home {
-  background: transparent url("/images/menu_home.png") no-repeat left top;
+  background: transparent url("../images/menu_home.png") no-repeat left top;
 }
 nav ul li .games {
-  background: transparent url("/images/menu_games.png") no-repeat left top;
+  background: transparent url("../images/menu_games.png") no-repeat left top;
 }
 nav ul li .events {
-  background: transparent url("/images/menu_events.png") no-repeat left top;
+  background: transparent url("../images/menu_events.png") no-repeat left top;
 }
 nav ul li .members {
-  background: transparent url("/images/menu_members.png") no-repeat left top;
+  background: transparent url("../images/menu_members.png") no-repeat left top;
 }
 nav ul li .gallery {
-  background: transparent url("/images/menu_gallery.png") no-repeat left top;
+  background: transparent url("../images/menu_gallery.png") no-repeat left top;
 }
 nav ul li .contacts {
-  background: transparent url("/images/menu_contacts.png") no-repeat left top;
+  background: transparent url("../images/menu_contacts.png") no-repeat left top;
 }
 
 article {
