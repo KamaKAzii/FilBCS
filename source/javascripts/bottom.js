@@ -1,17 +1,3 @@
-// Staticmatic's stuff...
-
-$(document).ready(function() {
-
-	// I'm on the outside
-	hostname = window.location.hostname
-	$("a[href^=http]")
-		.not("a[href*='" + hostname + "']")
-		.addClass('link external')
-		.attr('target', '_blank');
-});
-
-// Start of my stuff
-
 // Menu Animations
 
 $("nav div").hover(
@@ -29,6 +15,7 @@ var $modalTriggers = $(".modal-trigger");
 var modalNames = [];
 
 $modalTriggers.on("click", function() {
+  console.log("im in");
   var target = $.trim($(this).attr("class").replace("modal-trigger", ""));
   $target = $("#" + target);
   $target.css("display", "block");
@@ -86,3 +73,4 @@ $("#carouselMe").carousel(
     animationDuration: 1300
   }
 );
+

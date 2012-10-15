@@ -1,25 +1,79 @@
-# Compass Configuration
-# Learn more: http://compass-style.org/docs/tutorials/configuration-reference/
+###
+# Compass
+###
 
-# HTTP paths
-http_path             = '/'
-http_stylesheets_path = '/stylesheets'
-http_images_path      = '/images'
-http_javascripts_path = '/javascripts'
+# Susy grids in Compass
+# First: gem install susy --pre
+# require 'susy'
 
-# File system locations
-sass_dir              = 'src/stylesheets'
-css_dir               = 'site/stylesheets'
-images_dir            = 'site/images'
-javascripts_dir       = 'site/javascripts'
+# Change Compass configuration
+# compass_config do |config|
+#   config.output_style = :compact
+# end
 
-# Set to true for easier debugging
-line_comments         = false
-preferred_syntax      = :sass
+###
+# Page options, layouts, aliases and proxies
+###
 
-# CSS output style - :nested, :expanded, :compact, or :compressed
-output_style          = :expanded
+# Per-page layout changes:
+#
+# With no layout
+# page "/path/to/file.html", :layout => false
+#
+# With alternative layout
+# page "/path/to/file.html", :layout => :otherlayout
+#
+# A path which all have the same layout
+# with_layout :admin do
+#   page "/admin/*"
+# end
 
-# Determine whether Compass asset helper functions generate relative
-# or absolute paths
-relative_assets       = false
+# Proxy (fake) files
+# page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
+#   @which_fake_page = "Rendering a fake page with a variable"
+# end
+
+###
+# Helpers
+###
+
+# Automatic image dimensions on image_tag helper
+# activate :automatic_image_sizes
+
+# Methods defined in the helpers block are available in templates
+# helpers do
+#   def some_helper
+#     "Helping"
+#   end
+# end
+
+require 'haml'
+
+set :css_dir, 'stylesheets'
+
+set :js_dir, 'javascripts'
+
+set :images_dir, 'images'
+
+# Build-specific configuration
+configure :build do
+  # For example, change the Compass output style for deployment
+  # activate :minify_css
+
+  # Minify Javascript on build
+  # activate :minify_javascript
+
+  # Enable cache buster
+  # activate :cache_buster
+
+  # Use relative URLs
+  # activate :relative_assets
+
+  # Compress PNGs after build
+  # First: gem install middleman-smusher
+  # require "middleman-smusher"
+  # activate :smusher
+
+  # Or use a different image path
+  # set :http_path, "/Content/images/"
+end

@@ -1,0 +1,9 @@
+!!!
+%html
+  %head
+    %title FilBCS
+    = stylesheet_link_tag "screen"
+    = javascript_include_tag "all"
+  %body{:class => "homepage"}
+    = yield
+    = javascript_include_tag "bottom"
